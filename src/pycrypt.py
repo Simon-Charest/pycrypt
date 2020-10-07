@@ -4,9 +4,9 @@
 __author__ = 'Simon Charest'
 __copyright__ = 'Copyright 2019, SLCIT inc.'
 __credits__ = [
-    'Réjean Thiboutot',
-    'Tutorials Overflow',
     'Guillaume Veck'
+    'PyCryptodome',
+    'Réjean Thiboutot',
 ]
 __email__ = 'simoncharest@gmail.com'
 __license__ = 'GNU'
@@ -35,9 +35,7 @@ Unsupported AES modes:
 
 Requirement: pip install pycryptodome
 
-Sources:
-    Tutorials Overflow - https://tutorialsoverflow.com/python-encryption-and-decryption/
-    PyCryptodome - https://pycryptodome.readthedocs.io/en/latest/src/cipher/modern.html
+Source: PyCryptodome - https://pycryptodome.readthedocs.io/en/latest/src/cipher/modern.html
 """
 
 from Crypto import Random
