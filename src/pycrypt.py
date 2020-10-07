@@ -204,6 +204,22 @@ class AESCipher:
         return string
 
 
+def encrypt(string, key='', salt=''):
+    """ Simple encryption function """
+    ciphers = get_ciphers([key])
+    string, mac_tags = encrypt_recursively(ciphers, string, salt, AES.MODE_ECB)
+
+    return string
+
+
+def decrypt(string, key='', salt=''):
+    """ Simple decryption function """
+    ciphers = get_ciphers([key])
+    string = decrypt_recursively(ciphers, string, salt, AES.MODE_ECB)
+
+    return string
+
+
 def intersect(list1, list2):
     return [element for element in list1 if element in list2]
 
