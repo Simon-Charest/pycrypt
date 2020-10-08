@@ -64,7 +64,7 @@ INITIALIZATION_VECTOR = [AES.MODE_CBC, AES.MODE_CFB, AES.MODE_EAX, AES.MODE_GCM,
 MAC_TAG = [AES.MODE_EAX, AES.MODE_GCM, AES.MODE_SIV]
 
 
-def main():
+def run():
     # User defined values
     string = 'Hello World!'
     keys = ['my_s3cr3t_k3y_#1', 'my_s3c0nd_s3cr3t_k3y']
@@ -310,7 +310,3 @@ def remove(string, salt):
 
 def reverse(string):
     return string[::-1]
-
-
-if __name__ == '__main__':
-    main()
